@@ -20,6 +20,11 @@
                 # sha256 = lib.fakeSha256;
                 hash = "sha256-oHlAFdbpz8DzfbOAht6MUk44oIZEl3NfjQJpnMWYuqM=";
               };
+              aarch64-linux = fetchurl {
+                url = "https://download.swift.org/swift-${lib.toLower version}/ubi9-aarch64/swift-${version}/swift-${version}-ubi9-aarch64.tar.gz";
+                # sha256 = lib.fakeSha256;
+                hash = "sha256-V5Ce37FP9aUI+a3KP3QpNOT2AqCzRvvJbngPEPqloIQ=";
+              };
               aarch64-darwin = fetchurl {
                 url = "https://download.swift.org/swift-${lib.toLower version}/xcode/swift-${version}/swift-${version}-osx.pkg";
                 # sha256 = lib.fakeSha256;
